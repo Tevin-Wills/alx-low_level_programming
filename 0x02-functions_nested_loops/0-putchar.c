@@ -1,12 +1,12 @@
 #include "main.h"
-/*
+/**
  * main - prints _putchar
  *
- * Always returns 0 is success
+ * Return: Always 0 in success
  */
-int main (void)
+int main(void)
 {
-	_putchar(95); /*9s is the ASCII for _ */
+	_putchar(95); /*95 is asci for _*/
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -15,6 +15,6 @@ int main (void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	
+
 	return (0);
 }
