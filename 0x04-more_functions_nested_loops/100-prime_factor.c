@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  * main - Finds and prints the largest prime
@@ -10,6 +9,7 @@
 int main(void)
 {
 	long pf = 612852475143, div;
+
 	while (div < (pf / 2))
 	{
 		if ((pf % 2) == 0)
@@ -26,19 +26,3 @@ int main(void)
 	printf("%ld\n", pf);
 	return (0);
 }
-/** or
- * int main(void)
- * {
- * 	long int x = 612852475143;
- * 	long int p;
- * 	for (p = 2; p < x; p++)
- * 	{
- * 		if (x % p == 0)
- * 		{
- * 			x = x / p;
- * 		}
- * 	}
- * 	printf("%ld\n", p);
- * 	return (0);
- * }
- */
