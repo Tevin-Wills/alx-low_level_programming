@@ -42,10 +42,10 @@ void print_all(const char * const format, ...)
 				check = 1;
 				break;
 		}
-		if (format[i + 1] != '\0' && check == 0)
+		if (format[i + 1] != '\0' && check == 0) /* if NOT NULL */
 			printf(", ");
-		i++;
+		i++; /* update step of iter var */
 	}
 	printf("\n");
-	va_end(spec);
+	va_end(spec); /*end transversal */
 }
