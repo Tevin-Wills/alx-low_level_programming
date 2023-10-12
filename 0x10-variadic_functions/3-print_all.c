@@ -8,12 +8,12 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, check;
+	int i, check; /*declare variables and va_arg datatype */
 
 	char *str;
 	va_list spec;
 
-	va_start(spec, format);
+	va_start(spec, format); /* initialize var arguments */
 
 	i = 0;
 	while (format != NULL && format[i] != '\0')
