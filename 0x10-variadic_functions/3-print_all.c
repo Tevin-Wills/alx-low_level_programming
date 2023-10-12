@@ -39,13 +39,13 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 			default:
-				check = 1;
-				break;
-		}
-		if (format[i + 1] != '\0' && check == 0)
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-	va_end(spec);
+                                check = 1;
+                                break;
+                }
+                if (format[i + 1] != '\0' && check == 0) /*if NOT NULL*/
+                        printf(", ");
+                i++; /*update step of iter var*/
+        }
+        printf("\n");
+        va_end(spec); /*end transversal*/
 }
