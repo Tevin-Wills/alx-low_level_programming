@@ -21,7 +21,9 @@ size_t free_listint_safe(listint_t **h)
 		free(tmp_node);
 
 		if (tmp_node < safe_node)
+		{
 			break;
+		}
 	}
 	*h = NULL;
 	return (counter);
